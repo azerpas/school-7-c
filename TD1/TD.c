@@ -28,6 +28,7 @@
  * 
  * 🔩 Deposer_Ra()
  * {
+ *      P(exam);
  *      while( examiner() != LIBRE)
  *      {
  *          mutex_lock();
@@ -35,12 +36,14 @@
  *          mutex_unlock();
  *      }
  *      P(libre);
+ *      V(exam);
  *      Poser_la_piece();
  *      V(occupe);
  * }
  * 
  * 🔩 Prendre_Rb()
  * {
+ *      P(exam);
  *      while( examiner() != OCCUPE)
  *      {
  *          mutex_lock();
@@ -48,6 +51,7 @@
  *          mutex_unlock();
  *      }
  *      P(occupe);
+ *      V(exam);
  *      Enlever_la_piece();
  *      V(libre);
  * }
