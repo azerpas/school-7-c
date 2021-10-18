@@ -1,6 +1,10 @@
 #include <signal.h>
 #include <stdio.h>
+#ifdef _WIN32
+#include <Windows.h>
+#else
 #include <unistd.h>
+#endif
 #include <stdlib.h>
 
 #define CONSTANT_PROC 352000000
