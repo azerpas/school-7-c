@@ -47,3 +47,32 @@ Si toutes contraintes temporelles sont respectées
 Lorsque volume des tâches à ordonnancer est tel que tous les ordonnancements conduisent au **non respect d'au moins une tâche**
 ### Algorithme optimal
 Si pour une classe de pb donnée, il produit des ordonnancements optimaux
+
+## hors ligne: avantages / inconvénients
+Nécessite la connaissance à priori du système et     
+// TODO
+
+## En ligne: avantages / inconvénients
+- Flexible
+- Efficacité calculatoire requise
+- Difficulté à prendre en compte des contraintes variées
+- Oisif
+
+## Modèles - hypothèses
+### Sur les tâches
+### Sur les lois évènementielles
+### Sur les lois d'activations des tâches
+### Un énoncé de pb = un choix parmi toutes ces hypothèses
+
+## Algorithmes connus
+### Algos de bases
+### Statiques
+- FP
+- RMS
+### Dynamiques
+- FCFS
+- RR (tourniquet)
+- EDF (priorité échéance proche)
+- LLF (priorité à la plus petite laxité)
+
+## 
