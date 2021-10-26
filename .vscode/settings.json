@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "*.json": "jsonc",
-        "pthread.h": "c"
+        "pthread.h": "c",
+        "signal.h": "c"
     }
 }
