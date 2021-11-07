@@ -2,5 +2,5 @@
 
 # Révisions
 - [Introduction](/introduction.md)
-- [Temps Réel](/temps-reel.md)
+- [Concept Temps Réel](/temps-reel.md)
 - [Ordonnancement](/ordonnancement.md)
