@@ -44,5 +44,5 @@ void handler()
 {
     printf("Signal triggered!\n");
     do_work(4000);
-    // Signal or ?
+    // Signal received
 }

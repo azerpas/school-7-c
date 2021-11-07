@@ -32,12 +32,10 @@ int main(int argc, char const *argv[])
 void do_work(unsigned int nb_secondes)
 {
 	unsigned int i = CONSTANT_PROC * nb_secondes;
-
 	while(i>0)
 	{
 		asm volatile("nop");
 		i--;
 	}
-
 	return;
 }
