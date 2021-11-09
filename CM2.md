@@ -146,7 +146,7 @@ Si W =< U(n), RMS est optimal (sauf à `U(n) = 1` où le ça peut être juste)
 - Tâche apériodique
 - Pas de deps entre tâches
 - Échéances connues
-- Pr
+- Priorité est l'inverse de la laxité
 
 ## Différence EDF LLF
 **Si** les valeurs de laxité utilisées sont celles qui sont calculées aux dates de réveil des tâches     
