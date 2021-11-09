@@ -93,4 +93,35 @@ Un énoncé de problème demande un choix parmis toutes ces hypothèses:
 - Ponctualité
 - Peu sûr et vivace
 
-### RMS
+### RMS (statique)
+- `n` tâches
+- `Ci` durée d'exécution
+- `Ti` période (échéance)
+- Ordonnancement: Priorité à période **+ petite**
+
+#### Condition suffisante
+![RMS](https://user-images.githubusercontent.com/19282069/141013280-1897b26c-e9c0-47a2-bfbf-95bc709ce15a.png)
+
+[Exercice RMS](/CM2.md#Exercices)
+
+### EDF (dynamique)
+- Tâche apériodique
+- Pas de deps entre tâches
+- Échéances connues
+- Durées inconnues
+- Priorité est l'inverse de l'échéance relative
+#### Hypothèse de faisabilité
+**Optimal** si pas de surcharge (*W <= 1*)
+
+### LLF
+- Tâche apériodique
+- Pas de deps entre tâches
+- Échéances connues
+- Priorité est l'inverse de la laxité
+
+### Différence EDF LLF
+**Si** les valeurs de laxité utilisées sont celles qui sont calculées aux dates de réveil des tâches     
+- Ordonnancement équivalent
+
+**Si** les valeurs de laxité sont calculées à chaque instant   
+- LLF entraîne beaucoup plus de changement de contexte
