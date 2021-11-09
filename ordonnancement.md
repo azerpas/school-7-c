@@ -33,3 +33,64 @@ Marge dynamique: `Md = (Tf - Tc) - Ri` avec
 - *Ri*: durée restante du travail
 
 ![marge-dynamique](https://user-images.githubusercontent.com/19282069/141007556-5e988e46-f21f-492a-9f9f-8a1319901c0f.png)
+
+## Notion de tâche
+- Crée des jobs
+- 3 classes:
+    - Périodique
+    - Sporadique
+    - Apériodique
+
+## Période d'étude (cas périodique)
+[0, PPCM(Pi)], avec Pi période de toutes les tâches
+
+## Plan d'ordonnancement
+Méthode de prévision pour l'allocation des ressources. 
+- **Optimal** ssi les contraintes temporelles sont respectées.
+- **Surcharge** sinon
+### Exemple
+![exemple-optimal](https://user-images.githubusercontent.com/19282069/141008410-9257dfd8-2a6e-414f-a440-c986aa0f3426.png)
+
+# Algorithme d'ordonnancement
+Classe de problème données d'ordonnancement
+
+## Types
+- Statique (hors ligne)
+    - dates figées
+    - modèle périodique
+    - simplicité et régularité
+- Dynamique (en ligne)
+    - flexible
+    - efficace
+    - non oisif (tjrs utilisé)
+
+## Modèles & Hypothèses
+Un énoncé de problème demande un choix parmis toutes ces hypothèses:
+- Sur les tâches
+    - Séquentiel et parallèle
+    - Mutuellement dépendantes / indépendantes
+    - Valeurs identiques / différentes, constantes / dépendantes de l'instant de terminaison
+    - Abandon si violation des contraintes
+- Sur les ressources
+    - Multiplicité
+    - Mode d'accès
+    - Réquisition
+- Sur les lois évènementielles
+    - Connues totalement ou partiellement 
+    - Pré-déterminées ou statistiques
+- Sur les lois d'activations des tâches
+    - Instant d'activation
+    - Instant d'accès aux ressources
+
+## Algorithmes connus
+
+### FP
+- Priorité fixe
+- Préemption possible
+
+#### Avantages / Désavantages
+- Proche Hardware
+- Ponctualité
+- Peu sûr et vivace
+
+### RMS
